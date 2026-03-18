@@ -167,7 +167,7 @@ public class BooksFile {
 
     // Головне меню
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String booksFile = "books.txt";
 
         while (true) {
@@ -180,7 +180,7 @@ public class BooksFile {
             System.out.println("6. Вихід");
             System.out.print("Виберіть дію: ");
 
-            String choice = sc.nextLine();
+            String choice = scanner.nextLine();
             switch (choice) {
                 case "1" -> writeBooks(booksFile);
                 case "2" -> appendBooks(booksFile);
